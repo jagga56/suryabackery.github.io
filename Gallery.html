@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Surya Bakery</title>
+	<!-- META TAGS -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+	<meta name="author" content="Tanislav Robert">
+	<meta name="description" content="KARMO is a creative and modern template for digital agencies">
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/flexslider.css">
+	<link rel="stylesheet" href="assets/css/animsition.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/owl.carousel.css">
+	<link rel="stylesheet" href="assets/css/owl.theme.css">
+
+	<!-- Fontawesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+	
+
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Original Hover Effects with CSS3" />
+        <meta name="keywords" content="css3, transitions, thumbnail, animation, hover, effect, description, caption" />
+        <meta name="author" content="Alessio Atzeni for Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style_common.css" />
+        <link rel="stylesheet" type="text/css" href="css/style9.css" />
+        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
+		
+		
+		 
+	
+</head>
+<Style>
+#header {
+  background: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 48px;
+  z-index: 3;
+  transition: all 0.5s ease;
+}
+
+#header #logo {
+  padding: 6px 0 0 0;
+}
+
+#header #logo h2 {
+  color: #505050;
+  font-family: "Philosopher", sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+#header #logo h2 a {
+  color: #555;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+}
+
+#header #logo h2 a span {
+  color: #71c55d;
+}
+
+#header #logo img {
+  padding: 0;
+  margin: 0;
+}
+
+.scroll-header {
+  background: #fff;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+}
+.nav-menu, .nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+}
+
+.nav-menu li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu > li {
+  float: left;
+}
+
+.nav-menu li:hover > ul,
+.nav-menu li.sfHover > ul {
+  display: block;
+}
+
+.nav-menu ul ul {
+  top: 0;
+  left: 100%;
+}
+
+.nav-menu ul li {
+  min-width: 180px;
+}
+.sf-arrows .sf-with-ul {
+  padding-right: 22px;
+}
+
+.sf-arrows .sf-with-ul:after {
+  content: "\f107";
+  position: absolute;
+  right: 8px;
+  margin-top: 1px;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.sf-arrows ul .sf-with-ul:after {
+  content: "\f105";
+}
+
+/* Nav Meu Container */
+#nav-menu-container {
+  float: right;
+  margin: 0 0 0 0;
+}
+
+@media (max-width: 1024px) {
+  #nav-menu-container {
+    display: none;
+  }
+}
+
+/* Nav Meu Styling */
+.nav-menu a {
+  padding: 8px 8px;
+  text-decoration: none;
+  display: inline-block;
+  color: #555;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  outline: none;
+  letter-spacing: 0;
+  transition: 0.3s;
+}
+
+.nav-menu li:hover > a, .nav-menu > .menu-active > a {
+  color: #71c55d;
+}
+
+.nav-menu > li {
+  margin-left: 10px;
+}
+
+.nav-menu ul {
+  margin: 0;
+  padding: 10px;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  background: #fff;
+}
+
+.nav-menu ul li {
+  transition: 0.3s;
+}
+
+.nav-menu ul li a {
+  padding: 5px 10px;
+  color: #333;
+  transition: 0.3s;
+  display: block;
+  font-size: 14px;
+  text-transform: none;
+}
+
+.nav-menu ul li:hover > a {
+  color: #71c55d;
+}
+
+.nav-menu ul ul {
+  margin: 0;
+}
+
+/* Mobile Nav Toggle */
+#mobile-nav-toggle {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  margin: 4px 20px 0 0;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  display: none;
+  transition: all 0.4s;
+  outline: none;
+  cursor: pointer;
+}
+
+#mobile-nav-toggle i {
+  color: #555;
+  font-size: 24px;
+}
+
+@media (max-width: 1024px) {
+  #mobile-nav-toggle {
+    display: inline;
+  }
+}
+
+/* Mobile Nav Styling */
+#mobile-nav {
+  position: fixed;
+  top: 0;
+  padding-top: 18px;
+  bottom: 0;
+  z-index: 998;
+  background: rgba(52, 59, 64, 0.9);
+  left: -260px;
+  width: 260px;
+  overflow-y: auto;
+  transition: 0.4s;
+}
+
+#mobile-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#mobile-nav ul li {
+  position: relative;
+}
+
+#mobile-nav ul li a {
+  color: #fff;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 6px 22px 6px 15px;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  outline: none;
+  letter-spacing: 0;
+}
+
+#mobile-nav ul li a:hover {
+  color: #fff;
+}
+
+#mobile-nav ul li li {
+  padding-left: 30px;
+}
+
+#mobile-nav ul .menu-has-children i {
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+}
+
+#mobile-nav ul .menu-has-children i.fa-chevron-up {
+  color: #71c55d;
+}
+
+#mobile-nav ul .menu-item-active {
+  color: #71c55d;
+}
+
+#mobile-body-overly {
+  width: 100%;
+  height: 100%;
+  z-index: 997;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(52, 59, 64, 0.9);
+  display: none;
+}
+
+/* Mobile Nav body classes */
+body.mobile-nav-active {
+  overflow: hidden;
+}
+
+body.mobile-nav-active #mobile-nav {
+  left: 0;
+}
+
+body.mobile-nav-active #mobile-nav-toggle i {
+  color: #fff;
+}
+</style>
+
+<body>
+	
+	
+<header id="header" class="header header-hide">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <h2><a href="#body" class="scrollto"><span>Surya</span>Bakery</a></h2>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="Speciality.html">Specials</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+      
+          <li><a href="contact.html">Contact</a></li>
+          
+         
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header>
+
+
+
+
+			
+
+	<section class="portfolio">
+			<!-- categories  -->
+			<div class="col-md-3">
+				<div class="row categories-grid">
+					<nav class="categories">
+						<ul class="portfolio_filter">
+						<h1><a href="#" >Gallery</h1>
+							<li><a href="" class="active" data-filter="*">all Items</a></li>
+							<li><a href="" data-filter=".photography">Veg & Non-Veg Cakes</a></li>
+							<li><a href="" data-filter=".web">Cool Cakes</a></li>
+							<li><a href="" data-filter=".logo"> Ragi & Korra Laddu</a></li>
+							<li><a href="" data-filter=".graphics">Ragi & Korra Biscuits</a></li>
+							<li><a href="" data-filter=".ads">Dry Fruits</a></li>
+							<li><a href="" data-filter=".fashion">Buns & Breads</a></li>
+							<li><a href="" data-filter=".plum">Plum Cakes</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+			<!-- all works -->
+			<div class="col-md-9">
+				<div class="row portfolio_container">
+					<!-- single work -->
+					<div class="col-md-4 ">
+						
+							<img src="assets/img/work-1.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+									<span></span>
+									<em>Veg & Non-Veg Cakes</em>
+								</div>
+							</div>
+						</a>	
+					</div>
+					
+					<div class="col-md-4">
+						
+							<img src="assets/img/work-2.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+									<span></span>
+									<em>Plum Cakes</em>
+								</div>
+							</div>
+						</a>
+					</div>
+	
+					<div class="col-md-4">
+						
+							<img src="assets/img/work-3.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+									<span></span>
+									<em>Ragi & Korra Laddu</em>
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="col-md-4 ">
+						
+							<img src="assets/img/work-4.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+									<span></span>
+									<em>Osmania cake</em>
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					
+					<div class="col-md-4 ">
+						
+							<img src="assets/img/work-5.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+									<span></span>
+									<em>Ragi & Korra Laddu</em>
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					
+					<div class="col-md-4 ">
+						
+							<img src="assets/img/work-7.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+									<span></span>
+									<em>Veg & Non-Veg Cakes</em>
+								</div>
+							</div>
+						</a>	
+					</div>
+					
+					<div class="col-md-4 ">
+						
+							<img src="assets/img/work-6.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+									<span></span>
+									<em>Sweet cookies</em>
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="col-md-4 ">
+						
+							<img src="assets/img/work-8.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+									<span></span>
+									<em>Veg & Non-Veg Cakes</em>
+								</div>
+							</div>
+						</a>	
+					</div>
+				
+					<div class="col-md-4 ">
+						
+							<img src="assets/img/work-9.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+									<span></span>
+									<em>Ragi & Korra Laddu</em>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- end single work -->
+
+					<!-- Photography -->
+					
+					
+					<div class="col-md-4 photography">
+						
+							<img src="assets/img/work-10.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+									<span></span>
+									<em>Veg & Non-Veg Cakes</em>
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="col-md-4 photography">
+						
+							<img src="assets/img/work-11.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+									<span></span>
+									<em>Veg & Non-Veg Cakes</em>
+								</div>
+							</div>
+						</a>	
+					</div>
+					<div class="col-md-4 photography">
+						
+							<img src="assets/img/work-12.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+									<span></span>
+									<em>Veg & Non-Veg Cakes</em>
+								</div>
+							</div>
+						</a>	
+					</div>
+					<div class="col-md-4 photography">
+						
+							<img src="assets/img/work-13.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+									<span></span>
+									<em>Veg & Non-Veg Cakes</em>
+								</div>
+							</div>
+						</a>	
+					</div>
+					
+					
+					<div class="col-md-4" photography>
+						
+							<img src="assets/img/work-1.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+									<span></span>
+									<em>Veg & Non-Veg Cakes</em>
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<!-- Web Design -->
+					
+					
+					<div class="col-md-4  web  ">
+						
+							<img src="assets/img/work-14.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+									<span></span>
+									<em>Cool Cakes</em>
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="col-md-4  web  ">
+						
+							<img src="assets/img/work-15.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+									<span></span>
+									<em>Cool Cakes</em>
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="col-md-4  web  ">
+						
+							<img src="assets/img/work-16.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+									<span></span>
+									<em>Cool Cakes</em>
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="col-md-4  web  ">
+						
+							<img src="assets/img/work-17.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+									<span></span>
+									<em>Cool Cakes</em>
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					
+					<!-- Logo -->
+					
+					<div class="col-md-4  logo  ">
+						
+							<img src="assets/img/work-18.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+								
+									<span></span>
+									<em>Ragi & Korra Laddu</em>
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="col-md-4  logo  ">
+						
+							<img src="assets/img/work-19.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+									<span></span>
+									<em>Ragi & Korra Laddu</em>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4  logo  ">
+						
+							<img src="assets/img/work-20.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+									<span></span>
+									<em>Ragi & Korra Laddu</em>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4  logo ">
+						
+							<img src="assets/img/work-21.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+									<span></span>
+									<em>Ragi & Korra Laddu</em>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- Graphics -->
+					
+					
+					<div class="col-md-4  graphics ">
+						
+							<img src="assets/img/work-22.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+									<span</span>
+									<em>Ragi & Korra Biscuits</em>
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="col-md-4  graphics ">
+						
+							<img src="assets/img/work-23.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+									<span></span>
+									<em>Ragi & Korra Biscuits</em>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4  graphics ">
+						
+							<img src="assets/img/work-24.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+									<span></span>
+									<em>Ragi & Korra Biscuits</em>
+								</div>
+							</div>
+						
+					</div>
+					
+					<div class="col-md-4  graphics ">
+						
+							<img src="assets/img/work-25.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+									<span></span>
+									<em>Ragi & Korra Biscuits</em>
+								</div>
+							</div>
+						
+					</div>
+					<!-- adv -->
+					<div class="col-md-4  ads ">
+						
+							<img src="assets/img/work-26.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+									<span></span>
+									<em>Dry Fruits</em>
+								</div>
+							</div>
+						
+					</div>
+					
+					<div class="col-md-4  ads ">
+						
+							<img src="assets/img/work-27.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+									<span></span>
+									<em>Dry Fruits</em>
+								</div>
+							</div>
+						
+					</div>
+					<div class="col-md-4  ads ">
+						
+							<img src="assets/img/work-28.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+									<span></span>
+									<em>Dry Fruits</em>
+								</div>
+							</div>
+						
+					</div>
+					<div class="col-md-4  ads ">
+						
+							<img src="assets/img/work-29.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+									<span></span>
+									<em>Dry Fruits</em>
+								</div>
+							</div>
+						
+					</div>
+					
+					<!-- Fashion -->
+					<div class="col-md-4  fashion ">
+						
+							<img src="assets/img/work-30.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+									<span></span>
+									<em>Buns & Breads</em>
+								</div>
+							</div>
+						
+					</div>
+					<div class="col-md-4  fashion ">
+						
+							<img src="assets/img/work-31.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+									<span></span>
+									<em>Buns & Breads</em>
+								</div>
+							</div>
+						
+					</div>
+					<div class="col-md-4  fashion ">
+						
+							<img src="assets/img/work-32.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+									<span></span>
+									<em>Buns & Breads</em>
+								</div>
+							</div>
+						
+					</div>
+					<div class="col-md-4  fashion ">
+						
+							<img src="assets/img/work-33.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+									<span></span>
+									<em>Buns & Breads</em>
+								</div>
+							</div>
+						
+					</div>
+					
+					
+					<!-- plum-->
+					<div class="col-md-4 plum ">
+						
+							<img src="assets/img/work-34.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+									<span></span>
+									<em>Plum Cakes</em>
+								</div>
+							</div>
+						
+					</div>
+					
+					<div class="col-md-4  plum ">
+						
+							<img src="assets/img/work-35.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+									<span></span>
+									<em>Plum Cakes</em>
+								</div>
+							</div>
+						
+					</div>
+					
+					<div class="col-md-4  plum ">
+						
+							<img src="assets/img/work-36.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+									<span></span>
+									<em>Plum Cakes</em>
+								</div>
+							</div>
+						
+					</div>
+					
+					<div class="col-md-4  plum ">
+						
+							<img src="assets/img/work-37.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+									<span></span>
+									<em>Plum Cakes</em>
+								</div>
+							</div>
+						
+					</div>
+					
+					
+					<!-- end single work -->
+				</div>
+				<!-- end row -->
+			</div>
+			<!-- all works end -->
+		</div>
+		<!-- end container -->
+	</section>
+	<!-- portfolio -->
+
+	<!-- CLIENTS -->
+	<div id="clients" class="clients mt-100 mbr-box mbr-section mbr-section--relative">
+		<svg preserveAspectRatio="none" viewBox="0 0 100 102" height="100" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+			<path d="M0 0 L50 100 L100 0 Z" fill="#fff" stroke="#fff"></path>
+		</svg>
+		<div class="container">
+			<div class="row">
+						<div class="col-md-12">
+						</div>
+						<div id="owl-demo">
+								<div class="item"><img src="assets/img/clients/1.jpg" alt="Owl Image"></div>
+								<div class="item"><img src="assets/img/clients/2.jpg" alt="Owl Image"></div>
+								<div class="item"><img src="assets/img/clients/3.png" alt="Owl Image"></div>
+								<div class="item"><img src="assets/img/clients/1.jpg" alt="Owl Image"></div>
+								<div class="item"><img src="assets/img/clients/2.jpg" alt="Owl Image"></div>
+								<div class="item"><img src="assets/img/clients/3.png" alt="Owl Image"></div>
+						</div>
+				</div>
+		</div>
+	</div>
+
+	<!-- PRICING -->
+	
+
+	<!-- Testimonials -->
+	
+			<!-- Subscribe block -->
+			
+	<!-- Footer -->
+	<!-- .col-md-3 -->
+                    <!-- End Contact Widget -->
+
+                    <!-- Start Twitter Widget -->
+                   <!-- .col-md-3 -->
+                    <!-- End Twitter Widget -->
+
+                    <!-- Start Flickr Widget -->
+                    <!-- .col-md-6 -->
+                   <!-- .row -->
+                
+                <!-- End Copyright -->
+            
+	
+
+	<!-- SCRIPTS -->
+	<script type="text/javascript" src="assets/js/jquery-2.2.3.min.js"></script>
+	<script type="text/javascript" src="assets/js/animated-headline.js"></script>
+	<script type="text/javascript" src="assets/js/menu.js"></script>
+	<script type="text/javascript" src="assets/js/modernizr.js"></script>
+	<script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.animsition.min.js"></script>
+	<script type="text/javascript" src="assets/js/init.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+	<script type="text/javascript" src="assets/js/smooth-scroll.js"></script>
+	<script type="text/javascript" src="assets/js/numscroller.js"></script>
+	<script type="text/javascript" src="assets/js/wow.min.js"></script>
+	<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+
+	<script type="text/javascript">
+		$(window).load(function() {
+			new WOW().init();
+
+			// initialise flexslider
+			$('.flexslider').flexslider({
+				animation: "fade",
+				directionNav: true,
+				controlNav: false,
+				keyboardNav: true,
+				slideToStart: 0,
+				animationLoop: true,
+				pauseOnHover: false,
+				slideshowSpeed: 4000,
+			});
+
+			smoothScroll.init();
+
+			// initialize isotope
+			var $container = $('.portfolio_container');
+			$container.isotope({
+				filter: '*',
+			});
+
+			$('.portfolio_filter a').click(function(){
+				$('.portfolio_filter .active').removeClass('active');
+				$(this).addClass('active');
+
+				var selector = $(this).attr('data-filter');
+				$container.isotope({
+					filter: selector,
+					animationOptions: {
+						duration: 500,
+						animationEngine : "jquery"
+					}
+				});
+				return false;
+			});
+		});
+		
+
+	</script>
+	
+	
+	
+</body>
+</html>

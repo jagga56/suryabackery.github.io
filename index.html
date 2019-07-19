@@ -1,0 +1,1150 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Surya Bakery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"/>
+    <meta name="keywords" content="Cookie Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design"/>
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- Custom Theme files -->
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="css/aos.css">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+    <!-- font-awesome icons -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- //Custom Theme files -->
+    <!-- online-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <!-- //online-fonts -->
+</head>
+<style>
+#header {
+  background: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 48px;
+  z-index: 3;
+  transition: all 0.5s ease;
+}
+
+#header #logo {
+  padding: 6px 0 0 0;
+}
+
+#header #logo h1 {
+  color: #505050;
+  font-family: "Philosopher", sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+#header #logo h1 a {
+  color: #555;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+}
+
+#header #logo h1 a span {
+  color: #71c55d;
+}
+
+#header #logo img {
+  padding: 0;
+  margin: 0;
+}
+
+.scroll-header {
+  background: #fff;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+}
+.nav-menu, .nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+}
+
+.nav-menu li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu > li {
+  float: left;
+}
+
+.nav-menu li:hover > ul,
+.nav-menu li.sfHover > ul {
+  display: block;
+}
+
+.nav-menu ul ul {
+  top: 0;
+  left: 100%;
+}
+
+.nav-menu ul li {
+  min-width: 180px;
+}
+.sf-arrows .sf-with-ul {
+  padding-right: 22px;
+}
+
+.sf-arrows .sf-with-ul:after {
+  content: "\f107";
+  position: absolute;
+  right: 8px;
+  margin-top: 1px;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.sf-arrows ul .sf-with-ul:after {
+  content: "\f105";
+}
+
+/* Nav Meu Container */
+#nav-menu-container {
+  float: right;
+  margin: 0 0 0 0;
+}
+
+@media (max-width: 1024px) {
+  #nav-menu-container {
+    display: none;
+  }
+}
+
+/* Nav Meu Styling */
+.nav-menu a {
+  padding: 8px 8px;
+  text-decoration: none;
+  display: inline-block;
+  color: #555;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  outline: none;
+  letter-spacing: 0;
+  transition: 0.3s;
+}
+
+.nav-menu li:hover > a, .nav-menu > .menu-active > a {
+  color: #71c55d;
+}
+
+.nav-menu > li {
+  margin-left: 10px;
+}
+
+.nav-menu ul {
+  margin: 0;
+  padding: 10px;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  background: #fff;
+}
+
+.nav-menu ul li {
+  transition: 0.3s;
+}
+
+.nav-menu ul li a {
+  padding: 5px 10px;
+  color: #333;
+  transition: 0.3s;
+  display: block;
+  font-size: 14px;
+  text-transform: none;
+}
+
+.nav-menu ul li:hover > a {
+  color: #71c55d;
+}
+
+.nav-menu ul ul {
+  margin: 0;
+}
+
+/* Mobile Nav Toggle */
+#mobile-nav-toggle {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  margin: 4px 20px 0 0;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  display: none;
+  transition: all 0.4s;
+  outline: none;
+  cursor: pointer;
+}
+
+#mobile-nav-toggle i {
+  color: #555;
+  font-size: 24px;
+}
+
+@media (max-width: 1024px) {
+  #mobile-nav-toggle {
+    display: inline;
+  }
+}
+
+/* Mobile Nav Styling */
+#mobile-nav {
+  position: fixed;
+  top: 0;
+  padding-top: 18px;
+  bottom: 0;
+  z-index: 998;
+  background: rgba(52, 59, 64, 0.9);
+  left: -260px;
+  width: 260px;
+  overflow-y: auto;
+  transition: 0.4s;
+}
+
+#mobile-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#mobile-nav ul li {
+  position: relative;
+}
+
+#mobile-nav ul li a {
+  color: #fff;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 6px 22px 6px 15px;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  outline: none;
+  letter-spacing: 0;
+}
+
+#mobile-nav ul li a:hover {
+  color: #fff;
+}
+
+#mobile-nav ul li li {
+  padding-left: 30px;
+}
+
+#mobile-nav ul .menu-has-children i {
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+}
+
+#mobile-nav ul .menu-has-children i.fa-chevron-up {
+  color: #71c55d;
+}
+
+#mobile-nav ul .menu-item-active {
+  color: #71c55d;
+}
+
+#mobile-body-overly {
+  width: 100%;
+  height: 100%;
+  z-index: 997;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(52, 59, 64, 0.9);
+  display: none;
+}
+
+/* Mobile Nav body classes */
+body.mobile-nav-active {
+  overflow: hidden;
+}
+
+body.mobile-nav-active #mobile-nav {
+  left: 0;
+}
+
+body.mobile-nav-active #mobile-nav-toggle i {
+  color: #fff;
+}
+</style>
+<body>
+
+    <!-- header -->
+  
+	<header id="header" class="header header-hide">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="#body" class="scrollto"><span>Surya</span>Bakery</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="Speciality.html">Specials</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+      
+          <li><a href="contact.html">Contact</a></li>
+          
+         
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header>
+    <!-- //top header -->
+    <!-- banner -->
+    <div id="home">
+        <!-- header -->
+        
+        <!-- //header -->
+        <div class="callbacks_container">
+            <ul class="rslides" id="slider3">
+               
+                <li class="banner banner2">
+                    <div class="container">
+                        <div class="banner-text">
+                            <div class="slider-info">
+                                <span data-aos="zoom-in">Healthy Food, Healthy Life...!</span>
+                                <h3 data-aos="zoom-in">
+								Role Of Millet In The Life Of Ancestors Mittels</h3>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				
+				<li class="banner banner4">
+                    <div class="container">
+                        <div class="banner-text">
+                            <div class="slider-info">
+                                <span data-aos="zoom-in">Healthy Food, Healthy Life...!</span>
+                                <h3 data-aos="zoom-in">Role Of Millet In The Life Of Ancestors Mittels</h3>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- //banner -->
+    <!-- about -->
+    <div class="about-w3sec py-md-5" id="about">
+        <div class="container py-sm-5 py-4">
+            <div class="title-section pb-4"  data-aos="fade-up">
+                <h3 class="main-title-w3_pvt">Welocme to Surya Bakery</h3>
+                <span class="title-line">
+                </span>
+                <p class="about-txt text-center"> Healthy Food, Healthy life...</p>
+            </div>
+
+            <div class="space-sec1 text-center position-relative">
+                <div class="row">
+                    <div class="col-lg-4 abt-block" data-aos="zoom-in">
+                        <div class="about-icon-w3">
+                           <img src="images\ragiladdu.jpg"> 
+                        </div>
+                        <h3>Ragi Laddu</h3>
+                        <p>Calcium rich Ragi Laddu loaded with dry fruits is an excellent energy booster.Weak kids and adults can get healthy within a week </p>
+                    </div>
+                    <div class="col-lg-4 abt-block" data-aos="zoom-in">
+                        <div class="about-icon-w3">
+                            <img src="images\ragib.jpg">
+                        </div>
+                        <h3>Ragi Biscuits</h3>
+                        <p>Ragi biscuits is a great choice for healthy biscuits and works great when you are trying to lose weight</p>
+                    </div>
+                    <div class="col-lg-4 abt-block" data-aos="zoom-in">
+                        <div class="about-icon-w3">
+                            <img src="images\koraladdu.jpg">
+                        </div>
+                        <h3>Korra Laddu</h3>
+                        <p>Foxtail millet(korralu) laddu is rich in dietary fibre, protein and low in fat. Unlike rice, foxtail millet releases glucose steadily without affecting the metabolism of the body</p>
+                    </div>
+                    <div class="col-lg-4 abt-block">
+                        <div class="about-icon-w3">
+                            <img src="images\korrab.jpg">
+                        </div>
+						<h3> Korra Biscuits</h3>
+                        <p>Stock up with your kitchen with some delicious and mouth watering mufiins and cup cakes.</p>
+                    </div>
+                    <div class="col-lg-4 abt-block" data-aos="zoom-in">
+                        <div class="about-icon-w3">
+                            <img src="images\sunnundalu.jpg">
+                        </div>
+                        <h3>Sunnundalu</h3>
+                        <p>Sunnundalu (Urad Dal Laddo) is a traditional Andhra sweet dish that is simple to prepare.  It is a very healthy and nutritious Indian sweet dish.</p>
+                    </div>
+                    <div class="col-lg-4 abt-block" data-aos="zoom-in">
+                        <div class="about-icon-w3">
+                           <img src="images\swh.jpg">
+                        </div>
+                        <h3>All Type of sweet and hots mode with 5 Millets</h3>
+                        <p>Find a wide variety of baked goods featuring whole grains and natural sweeteners.</p>
+                    </div>
+                </div>
+                <div class="about-image" data-aos="zoom-in">
+                    <img src="images/about.jpg" alt="" class="img-fluid"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //about -->
+    <!-- slide -->
+    <div class="row mx-0">
+        <div class="col-lg-6 bg-theme1 slide-left" data-aos="fade-up">
+            <div class="title-section text-center">
+                <h3 class="main-title-w3_pvt text-left text-white">100% pure butter cookies </h3>
+                <p class="slide-txt text-left text-white">No event is too large or too small for The Dream Bakery. Whether planning an intimate dinner party, black-tie gala or corporate gathering, our team works closely with you to design delicious, customizable desserts.
+
+</p>
+            </div>
+        </div>
+        <div class="col-lg-6 slide-bg" data-aos="fade-down">
+        </div>
+    </div>
+    <!-- //slide -->
+    <!-- team -->
+    <div class="team-wthree py-lg-5" id="team" >
+        <div class="container py-sm-5 py-4">
+            <div class="title-section pb-4">
+                <h3 class="main-title-w3_pvt">meet our team</h3>
+                <span class="title-line">
+                </span>
+            </div>
+            <div class="row team space-sec1" data-aos="fade-up">
+                <div class="col-md-12">
+                    <div id="teamCarousel" class="carousel slide" data-ride="carousel">
+
+                        <ol class="carousel-indicators">
+                            <li data-target="#teamCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#teamCarousel" data-slide-to="1"></li>
+                        </ol>
+                        <!-- Carousel items -->
+                        <div class="carousel-inner team-wthree-main">
+                            <div class="carousel-item active">
+                                <div class="d-md-flex team-agile-row">
+                                    <div class="col-lg-4 col-md-6 w3-slide-grid">
+                                        <div class="box20 position-relative">
+                                            <img src="images/t1.jpg" alt="" class="img-fluid rounded"/>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 w3-slide-grid">
+                                        <div class="box20 position-relative">
+                                            <img src="images/t2.jpg" alt="" class="img-fluid rounded"/>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 w3-slide-grid">
+                                        <div class="box20 position-relative">
+                                            <img src="images/t3.jpg" alt="" class="img-fluid rounded"/>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--.item-->
+                            <div class="carousel-item">
+                                <div class="d-md-flex team-agile-row">
+                                    <div class="col-lg-4 col-md-6 w3-slide-grid" data-aos="zoom-in" data-aos-duration="4000">
+                                        <div class="box20 position-relative">
+                                            <img src="images/t2.jpg" alt="" class="img-fluid rounded"/>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 w3-slide-grid" data-aos="zoom-in">
+                                        <div class="box20 position-relative">
+                                            <img src="images/t1.jpg" alt="" class="img-fluid rounded"/>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 w3-slide-grid" data-aos="zoom-in">
+                                        <div class="box20 position-relative">
+                                            <img src="images/t3.jpg" alt="" class="img-fluid rounded"/>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->
+
+                        </div>
+                        <!--.carousel-inner-->
+                    </div>
+                    <!--.Carousel-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //team -->
+    <!-- stats -->
+    <section class="w3_pvt_stats py-md-5" id="more">
+        <div class="container">
+            <div class="py-lg-5 w3-abbottom">
+                <div class="row py-sm-5 py-4">
+                    <div class="counter col-lg-3 col-6" data-aos="fade-up">
+                        <i class="fa fa-smile-o"></i>
+                        <div class="timer count-title count-number mt-2 text-white" data-to="5100" data-speed="1500"></div>
+                        <p class="count-text text-white">happy customers</p>
+                    </div>
+                    <div class="counter col-lg-3 col-6 mt-lg-0 mt-4" data-aos="fade-up">
+                        <i class="fa fa-users"></i>
+                        <div class="timer count-title count-number mt-2 text-white" data-to="05" data-speed="1500"></div>
+                        <p class="count-text text-white">professional chefs</p>
+                    </div>
+                    <div class="counter col-lg-3 col-6 mt-lg-0 mt-4" data-aos="fade-up">
+                        <i class="fa fa-trophy"></i>
+                        <div class="timer count-title count-number mt-2 text-white" data-to="20" data-speed="1500"></div>
+                        <p class="count-text text-white">years of experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //stats -->
+    <!-- services -->
+    <div class="w3_pvt-works py-sm-5 py-4" id="services">
+        <div class="container py-lg-5">
+            <div class="title-section pb-4">
+                <h3 class="main-title-w3_pvt">Our Customers Favourites</h3>
+                <span class="title-line">
+                </span>
+            </div>
+            <div class="row space-sec">
+                <div class="col-lg-3 col-sm-6 text-center" data-aos="zoom-in">
+                    
+                 <img src="images\36.jpg">
+                    
+                    <div class="ih-item-desc">
+                        <h4 class="item-title">Party Rainbow Pinata Cake</h4>
+                        <p></p>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-3  col-sm-6  text-center my-sm-0 my-4" data-aos="zoom-in">
+                    <img src="images\44.jpg">
+                    <div class="ih-item-desc">
+                        <h4 class="item-title">Magical Creatures Selection Box</h4>
+                        <p></p>
+                        
+                    </div>
+                </div>
+                
+                <div class="col-lg-3  col-sm-6  text-center mt-lg-0 mt-sm-5" data-aos="zoom-in">
+                     <img src="images\6.jpg">
+                    <div class="ih-item-desc">
+                        <h4 class="item-title">Favourite Flavours Mini Selection Box</h4>
+                        <p></p>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6  text-center mt-lg-0 mt-sm-5 mt-4" data-aos="zoom-in">
+                     <img src="images\0.jpg">
+                    <div class="ih-item-desc">
+                        <h4 class="item-title">Chocolate Curl Cake</h4>
+                        <p></p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //services -->
+    <!-- blog -->
+    <section class="blog_w3ls py-lg-5" id="posts">
+        <div class="container py-sm-5 py-4">
+            <div class="title-section pb-4">
+                <h3 class="main-title-w3_pvt">Latest Recipes</h3>
+                <span class="title-line">
+                </span>
+            </div>
+            <div class="row space-sec">
+                <!-- blog grid -->
+                <div class="col-lg-4 col-md-6 mt-sm-0 mt-4" data-aos="zoom-out">
+                    <div class="card border-0">
+                        <div class="card-header p-0 position-relative">
+                            <a href="#exampleModal2" data-toggle="modal" aria-pressed="false" data-target="#exampleModal2"
+                                role="button">
+                                <img class="card-img-bottom" src="images/p1.jpg" alt="Card image cap">
+                                <span class="fa fa-user post-icon bg-theme1 " aria-hidden="true"></span>
+
+                            </a>
+                        </div>
+                        <div class="card-body border-0">
+                            <h5 class="blog-title card-title font-weight-bold">
+                                <a href="#exampleModal2" data-toggle="modal" aria-pressed="false" data-target="#exampleModal2"
+                                    role="button">STRAWBERRY–GRAHAM GALETTE.</a>
+                            </h5>
+                            <p>"Galette" is just a fancy word for "a pie that's practically impossible to mess up."</p>
+                            <button type="button" class="btn blog-btn wthree-bnr-btn mt-3" data-toggle="modal"
+                                aria-pressed="false" data-target="#exampleModal2">
+                                
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- //blog grid -->
+                <!-- blog grid -->
+                <div class="col-lg-4 col-md-6 mt-md-0 mt-sm-5 mt-4"  data-aos="zoom-out">
+                    <div class="card border-0">
+                        <div class="card-header p-0 position-relative">
+                            <a href="#exampleModal3" data-toggle="modal" aria-pressed="false" data-target="#exampleModal3"
+                                role="button">
+                                <img class="card-img-bottom" src="images/p2.jpg" alt="Card image cap">
+                                <span class="fa fa-user post-icon bg-theme1 " aria-hidden="true"></span>
+
+                            </a>
+                        </div>
+                        <div class="card-body border-0">
+                            <h5 class="blog-title card-title font-weight-bold">
+                                <a href="#exampleModal3" data-toggle="modal" aria-pressed="false" data-target="#exampleModal3"
+                                    role="button">QUINOA-BANANA MUFFINS</a>
+                            </h5>
+                            <p>Including our favorite approach for cooking quinoa.Very yummy taste and good texture with the quinoa inside and sprinkled on top.</p>
+                            <button type="button" class="btn blog-btn wthree-bnr-btn mt-3" data-toggle="modal"
+                                aria-pressed="false" data-target="#exampleModal3">
+                                
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- //blog grid -->
+                <!-- blog grid -->
+                <div class="col-lg-4 col-md-6 mt-lg-0 mt-5 mx-auto"  data-aos="zoom-out">
+                    <div class="card border-0">
+                        <div class="card-header p-0  position-relative">
+                            <a href="#exampleModal4" data-toggle="modal" aria-pressed="false" data-target="#exampleModal4"
+                                role="button">
+                                <img class="card-img-bottom" src="images/p3.jpg" alt="Card image cap">
+                                <span class="fa fa-user post-icon bg-theme1 " aria-hidden="true"></span>
+                            </a>
+                        </div>
+                        <div class="card-body border-0">
+                            <h5 class="blog-title card-title font-weight-bold">
+                                <a href="#exampleModal4" data-toggle="modal" aria-pressed="false" data-target="#exampleModal4"
+                                    role="button">CINNAMON-DATE BUNS</a>
+                            </h5>
+                            <p>Yes, the dough is buttery, but replacing the brown sugar with puréed dates is a nutritional game-changer.</p>
+                            <button type="button" class="btn blog-btn wthree-bnr-btn mt-3" data-toggle="modal"
+                                aria-pressed="false" data-target="#exampleModal4">
+                                
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- //blog grid -->
+            </div>
+        </div>
+    </section>
+    <!-- //blog -->
+    <!-- slide bottom-->
+    <div class="slide-bottom py-lg-5" id="slide-btm-wthree">
+        <div class="container py-sm-5 py-4">
+            <div class="title-section pb-4" data-aos="fade-down">
+                <h3 class="main-title-w3_pvt text-white">Surya Bakery</h3>
+                <span class="title-line bg-light">
+                </span>
+            </div>
+            <div class="text-center pt-lg-5"  data-aos="fade-up">
+                <div class="slide-btm-wthree-w3_pvt">
+                    <p class="text-white">
+                        <i class="fa fa-quote-left"></i>Our fully-customised, fun and friendly range of specialty cakes for children are guaranteed to bring a smile to the face of the birthday boy or girl.Make your get-together an occasion to remember with one of our amazing dessert cake selections 
+                        <i class="fa fa-quote-right"></i>
+                    </p>
+                </div>
+                <div class="d-sm-flex justify-content-center">
+                    <a class="btn btn-primary mt-4 w3_pvt-link-bnr scroll bg-theme1" href="contact.html" role="button">contact us
+                    </a>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- //slide bottom -->
+    <!-- contact -->
+    <div class="contact-wthree" id="contact">
+        <div class="container py-sm-5">
+            <div class="title-section py-4">
+                <h3 class="main-title-w3_pvt">contact us</h3>
+                <span class="title-line">
+                </span>
+            </div>
+            <div class="row py-lg-5 py-4">
+                <div class="col-lg-5" data-aos="zoom-in">
+                    <div class="w3_pvt-contact-top">
+                        <h4>get in touch </h4>
+                        <p>MG Road,Vijayawada,AP,India</p>
+                    </div>
+                    <hr>
+                    <p>Take time out of your busy day to enjoy a delicious meal or coffee and cake in our al fresco dining area.</p>
+                    <!-- map -->
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.9503398796587!2d-73.9940307!3d40.719109700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a27e2f24131%3A0x64ffc98d24069f02!2sCANADA!5e0!3m2!1sen!2sin!4v1441710758555"
+                            allowfullscreen></iframe>
+                    </div>
+                    <!--// map-->
+                </div>
+                <div class="offset-1"></div>
+                <div class="col-lg-6 mt-lg-0 mt-5" data-aos="zoom-in">
+                    <!-- register form grid -->
+                    <div class="register-top1">
+                        <form action="#" method="get" class="register-wthree">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>
+                                            First name
+                                        </label>
+                                        <input class="form-control" type="text" placeholder="Johnson" name="email"
+                                            required="">
+                                    </div>
+                                    <div class="col-md-6 mt-md-0 mt-4">
+                                        <label>
+                                            Last name
+                                        </label>
+                                        <input class="form-control" type="text" placeholder="Kc" name="name" required="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>
+                                            Mobile
+                                        </label>
+                                        <input class="form-control" type="text" placeholder="xxxx xxxxx" name="email"
+                                            required="">
+                                    </div>
+                                    <div class="col-md-6 mt-md-0 mt-4">
+                                        <label>
+                                            Email
+                                        </label>
+                                        <input class="form-control" type="email" placeholder="example@email.com" name="email"
+                                            required="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label>
+                                            Your message
+                                        </label>
+                                        <textarea placeholder=" type your message here" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-12">
+								<center>
+								   <button type="submit"  class="btn btn-w3_pvt-link-bnr  bg-theme1 font-weight-bold text-uppercase bg-theme1">Send</button> 
+                                </center>
+								</div>
+                            </div>
+                        </form>
+                    </div>
+                    <!--  //register form grid ends here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footerv4-w3ls" id="footer">
+        <div class="footerv4-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 footv4-left" data-aos="fade-up">
+
+                        <h2>
+                            <a href="index.html">Surya Bakery</a>
+                        </h2>
+                        <p class="text-white">Healthy food, Healthy Life.</p>
+
+
+                    </div>
+                    <div class="col-lg-2 col-sm-6 footv4-content mt-sm-0 mt-4" data-aos="fade-up">
+                        <h3>Navigation</h3>
+                        <ul class="v4-content">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html" class="scroll">About Us</a>
+                            </li>
+                            <li>
+                                <a href="Speciality.html" class="scroll">Speciality</a>
+                            </li>
+                            <li>
+                                <a href="Gallery.html" class="scroll">Gallery</a>
+                            </li>
+                            <li>
+                                <a href="contact.htnl" class="scroll">contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 footv4-left fv4-g3 my-lg-0 mt-4" data-aos="fade-up">
+                        <div class="footerv4-social">
+                            <h3>stay connected</h3>
+                            <ul>
+                                <li>
+                                    <a href="www.facebook.com">
+                                        <span class="fa fa-facebook-f icon_facebook"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="www.twitter.com">
+                                        <span class="fa fa-twitter icon_twitter"></span>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="www.google.com">
+                                        <span class="fa fa-google-plus icon_g_plus"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- //footer social -->
+                    </div>
+                    <div class="col-lg-3 col-sm-6 footv4-left my-lg-0 my-4" data-aos="fade-up">
+                        <h3>contact</h3>
+                        <ul class="d-flex header-agile pt-0 flex-column">
+                            <li>
+                                <span class="fa fa-envelope-open"></span>
+                                <a href="mailto:example@email.com" class="text-white">suryabakery@gmail.com</a>
+                            </li>
+                            <li class="mt-3">
+                                <span class="fa fa-phone"></span>
+                                <p class="d-inline text-white">9999999999</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- /footerv4-top -->
+        </div>
+    </div>
+    <!-- //footer -->
+    <div class="cpy-right bg-theme">
+        <p>
+            <a href="http://w3layouts.com">
+			</a>
+        </p>
+    </div>
+    <!-- login  -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content bg-theme1">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Signin</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="post" class="p-3">
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Username</label>
+                            <input type="text" class="form-control" placeholder="" name=" name" id="recipient-name"
+                                required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="col-form-label">Password</label>
+                            <input type="password" class="form-control" placeholder="" name="Password" id="password"
+                                required="">
+                        </div>
+                        <div class="right-w3l">
+                            <input type="submit" class="form-control" value="Login">
+                        </div>
+                        <div class="row sub-w3l my-3">
+                            <div class="col sub-w3_pvt">
+                                <input type="checkbox" id="brand1" value="">
+                                <label for="brand1" class="text-white">
+                                    <span></span>Remember me?</label>
+                            </div>
+                            <div class="col forgot-w3l text-right">
+                                <a href="#" class="text-white">Forgot Password?</a>
+                            </div>
+                        </div>
+                        <p class="text-center dont-do text-white">Don't have an account?
+                            <a href="#" data-toggle="modal" data-target="#exampleModal1" class="text-white">
+                                Register Now</a>
+
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //login -->
+    <!-- register -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content bg-theme1">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">Register</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="post" class="p-3">
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Username</label>
+                            <input type="text" class="form-control" placeholder="" name=" name" id="recipient-rname"
+                                required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-email" class="col-form-label">Email</label>
+                            <input type="email" class="form-control" placeholder="" name="Email" id="recipient-email"
+                                required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="password1" class="col-form-label">Password</label>
+                            <input type="password" class="form-control" placeholder="" name="Password" id="password1"
+                                required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="password2" class="col-form-label">Confirm Password</label>
+                            <input type="password" class="form-control" placeholder="" name="Confirm Password" id="password2"
+                                required="">
+                        </div>
+                        <div class="sub-w3l">
+                            <div class="sub-w3_pvt">
+                                <input type="checkbox" id="brand2" value="">
+                                <label for="brand2" class="mb-3 text-white">
+                                    <span></span>I Accept to the Terms & Conditions</label>
+                            </div>
+                        </div>
+                        <div class="right-w3l">
+                            <input type="submit" class="form-control" value="Register">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // register -->
+    <!-- blog modal1 -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-theme1">
+                    <h5 class="modal-title" id="exampleModalLabel2">Cras ultricies ligula sed magna dictum porta
+                        auris
+                        blandita.</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="images/p1.jpg" class="img-fluid" alt=""/>
+                    <p class="text-left my-4">
+                        Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur non nulla sit amet
+                        nisl
+                        tempus convallis quis ac
+                        lectus. Cras ultricies ligula sed magna dictum porta.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //blog modal1 -->
+    <!-- blog modal2 -->
+    <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-theme1">
+                    <h5 class="modal-title" id="exampleModalLabel3">Cras ultricies ligula sed magna dictum porta
+                        auris
+                        blandita.</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="images/p2.jpg" class="img-fluid" alt=""/>
+                    <p class="text-left my-4">
+                        Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur non nulla sit amet
+                        nisl
+                        tempus convallis quis ac
+                        lectus. Cras ultricies ligula sed magna dictum porta.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //blog modal2 -->
+    <!-- blog modal3 -->
+    <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-theme1">
+                    <h5 class="modal-title" id="exampleModalLabel4">Cras ultricies ligula sed magna dictum porta
+                        auris
+                        blandita.</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="images/p3.jpg" class="img-fluid" alt=""/>
+                    <p class="text-left my-4">
+                        Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur non nulla sit amet
+                        nisl
+                        tempus convallis quis ac
+                        lectus. Cras ultricies ligula sed magna dictum porta.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //blog modal3-->
+    <!-- js -->
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <!-- //js -->
+    <!-- script for password match -->
+    <script>
+        window.onload = function () {
+            document.getElementById("password1").onchange = validatePassword;
+            document.getElementById("password2").onchange = validatePassword;
+        }
+
+        function validatePassword() {
+            var pass2 = document.getElementById("password2").value;
+            var pass1 = document.getElementById("password1").value;
+            if (pass1 != pass2)
+                document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+            else
+                document.getElementById("password2").setCustomValidity('');
+            //empty string means no validation error
+        }
+    </script>
+    <!-- script for password match -->
+    <!-- Banner  Responsiveslides -->
+    <script src="js/responsiveslides.min.js"></script>
+    <script>
+        // You can also use"$(window).load(function() {"
+        $(function () {
+            // Slideshow 4
+            $("#slider3").responsiveSlides({
+                auto:true,
+                pager: true,
+                nav: false,
+                speed: 500,
+                namespace: "callbacks",
+                before: function () {
+                    $('.events').append("<li>before event fired.</li>");
+                },
+                after: function () {
+                    $('.events').append("<li>after event fired.</li>");
+                }
+            });
+
+        });
+    </script>
+    <!-- //Banner  Responsiveslides -->
+    <script src='js/aos.js'></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000
+        });
+    </script>
+
+    <!-- start-smooth-scrolling -->
+    <script src="js/move-top.js"></script>
+    <script src="js/easing.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+    <!-- //end-smooth-scrolling -->
+    <!-- smooth-scrolling-of-move-up -->
+    <script>
+        $(document).ready(function () {
+            /*
+            var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear' 
+            };
+            */
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <script src="js/SmoothScroll.min.js"></script>
+    <!-- //smooth-scrolling-of-move-up -->
+    <script src="js/counter.js"></script>
+    <!-- //stats -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
